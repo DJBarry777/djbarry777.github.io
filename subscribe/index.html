@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Subscribe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../d.png">
+    <style>
+button {
+  padding: 20px 40px;
+  background-color: #d00;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+}
+
+button:hover {
+  background-color: #a00;
+}
+
+p {
+  margin: 0;
+  font-family: Calibri, Sans;
+}
+
+input {
+  padding: 5px;
+  font-size: 1rem;
+  border-width: 2px;
+  border-radius: 5px;
+
+  box-sizing: border-box; /* Makes it so the padding and border is included in the width calculation */
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.child {
+  flex-grow: 1;
+}
+
+.bigchild {
+  flex-grow: 8;
+}
+    </style>
+  </head>
+
+  <body>
+    <header><div class="logo xyz"><strong>DayCarteXYZ</strong></div></header>
+
+    <nav><ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about/index.html">About</a></li>
+      <li><a href="../cite/index.html">Cite</a></li>
+      <li><a href="../faq/index.html">FAQ</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+    </ul></nav>
+
+    <article>
+      <h1>For just ¢0.05 a minute, subscribe</h1>
+
+      <p>Name*</p>
+      <input type="text"><br><br>
+
+      <p>Address line 1*</p>
+      <input type="text"><br>
+      <p>Address line 2</p>
+      <input type="text"><br>
+
+      <div class="container">
+        <div class="child">
+          <p>City*</p>
+          <input type="text">
+        </div>
+        <div class="child">
+          <p>State*</p>
+          <input type="text">
+        </div>
+        <div class="child">
+          <p>Zip Code*</p>
+          <input type="text">
+        </div>
+      </div>
+      <br>
+
+      <p>Credit Card Number*</p>
+      <input type="text"><br>
+
+      <div class="container">
+
+        <div class="child">
+          <p>CVV*</p>
+          <input type="text">
+        </div>
+
+        <div class="child">
+          <p>Expiration Date*</p>
+          <input type="text">
+        </div>
+      </div>
+
+      <p>*Indicates required field</p>
+      <br>
+
+      <button onclick="window.location.href='subscribe2.html';">Proceed</a></button>
+    </article>
+  </body>
+</html>
