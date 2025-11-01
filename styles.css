@@ -1,0 +1,151 @@
+:root {
+  --accent: #d00;
+  --accentarc: #339;
+  --bgdark: #333;
+  --bggray: #555;
+  --articlewidth: 800px;
+  --imgmargin: 25px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--bgdark);
+}
+
+.logo {
+  padding: 10px 30px;
+  font-size: 2rem;
+  font-family: Helvetica, Sans Serif;
+  color: white;
+}
+
+.xyz {
+  background-color: var(--accent);
+  width: 220px;
+}
+
+.archive {
+  background-color: var(--accentarc);
+  width: 330px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--bggray);
+}
+
+li a:not(.noformat) {
+  float: left;
+  padding: 10px 30px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: Calibri, Sans;
+}
+
+li a:hover:not(.noformat) {
+  background-color: #444;
+}
+
+ol {
+  margin: 0 0 1.5rem 0;
+  font-family: Calibri, Sans;
+  font-size: 1.5rem;
+}
+
+article {
+  margin: 60px auto 0px auto;
+  padding: 0px 20px;
+  max-width: var(--articlewidth);
+  font-family: New Century Schoolbook, Serif;
+  line-height: 1.8;
+}
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-family: Calibri, Sans Serif;
+  font-size: 3rem;
+  line-height: normal;
+}
+
+h2 {
+  margin: 0 0 0.5rem 0;
+  font-family: Calibri, Sans Serif;
+  font-size: 2rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  background-color: #ddd;
+  width: calc(100% - 2 * var(--imgmargin));
+  height: auto;
+  object-fit: contain;
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.2rem;
+}
+
+.intext {
+  color: #00d;
+}
+
+.intext:not(:hover) {
+  text-decoration: none;
+}
+
+.info {
+  padding: 0;
+  font-family: Calibri, Sans Serif;
+  font-size: 1.0rem;
+  color: #777;
+}
+
+.caption {
+  margin: 10px var(--imgmargin);
+  font-size: 1.0rem;
+  text-align: right;
+}
+
+hr {
+  margin: 10px 0 30px 0;
+  color: #aaa;
+}
+
+.end {
+  margin: 60px 0 0 0;
+  padding: 50px 0;
+  color: white;
+  background-color: var(--bggray);
+  font-family: Calibri, Sans Serif;
+  font-size: 1.5rem;
+}
+
+.end a {
+  color: #bbf;
+}
+
+footer {
+  padding: 20px;
+  background-color: var(--bgdark);
+  color: white;
+  text-align: center;
+  font-family: Calibri, Sans Serif;
+}
